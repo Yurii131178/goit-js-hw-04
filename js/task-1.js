@@ -6,6 +6,32 @@ function isEnoughCapacity(products, containerSize) {
     return total <= containerSize ? true : false;
 }
 
+
+// або, як варіант, спрощуємо код із зостосуванням циклу for...in і дістаємо значення ключів через синтаксис [] // 
+
+// function isEnoughCapacity(products, containerSize) {
+//   let total = 0;
+//   for(const key in products) {
+//     total += products[key];}
+//     return total <= containerSize ? true : false;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 console.log(
   isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)
 ); // true
